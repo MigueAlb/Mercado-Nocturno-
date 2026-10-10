@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Comunidad del Mercado Nocturno del Barrio Chino de Guayaquil.">
     <title>Comunidad | Mercado Nocturno del Barrio Chino</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comunidad.css">
 </head>
 
 <body>
@@ -22,118 +22,155 @@
 
     <main>
         <section id="noticias" class="noticias">
-            <div class="contenedor">
-                <h2>Novedades</h2>
-                <p>Descubre lo que está sucediendo en el Mercado Nocturno
-                   y conoce las próximas actividades de nuestra comunidad.</p>
+            <div class="contenedor noticias_distribucion">
+
+                <div class="noticias_informacion">
+                    <h2>Noticias</h2>
+                    <p>Mantente informado sobre las próximas actividades,
+                       celebraciones y novedades del Barrio Chino.</p>
+                    <p>Conoce los eventos que reúnen cultura, gastronomía
+                       y comunidad en el centro de Guayaquil.</p>
+                </div>
 
                 <div class="carrusel">
-                    <button class="flecha_anterior" type="button">&lt;</button>
+                    <input type="radio" name="carrusel"
+                           id="noticia_1_control" checked>
+
+                    <input type="radio" name="carrusel"
+                           id="noticia_2_control">
+
+                    <input type="radio" name="carrusel"
+                           id="noticia_3_control">
 
                     <div class="carrusel_contenido">
-                        <article class="noticia activa">
-                            <a href="#">
-                                <figure class="noticia_imagen">
-                                    <img src="Resources/Images/noticia-1.jpg"
-                                         alt="Próxima edición del Mercado Nocturno">
-                                </figure>
 
-                                <div class="noticia_texto">
-                                    <h3>Próxima edición del Mercado Nocturno</h3>
-                                    <p>Muy pronto volveremos a encontrarnos con
-                                       nuevos sabores, emprendimientos y
-                                       actividades culturales.</p>
-                                </div>
-                            </a>
+                        <article class="noticia noticia_1">
+                            <label class="flecha_anterior"
+                                   for="noticia_3_control">&lt;</label>
+
+                            <div class="noticia_contenido">
+                                <a href="https://www.instagram.com/p/Dd_o9UjOybd/"
+                                   target="_blank">
+                                    <figure class="noticia_imagen">
+                                        <img src="resources/images/noticia-dia-nacional-china.png"
+                                             alt="Celebración del Día Nacional de China">
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <label class="flecha_siguiente"
+                                   for="noticia_2_control">&gt;</label>
                         </article>
 
-                        <article class="noticia">
-                            <a href="#">
-                                <figure class="noticia_imagen">
-                                    <img src="Resources/Images/noticia-2.jpg"
-                                         alt="Emprendimientos del Mercado Nocturno">
-                                </figure>
+                        <article class="noticia noticia_2">
+                            <label class="flecha_anterior"
+                                   for="noticia_1_control">&lt;</label>
 
-                                <div class="noticia_texto">
-                                    <h3>Conoce nuevos emprendimientos</h3>
-                                    <p>Descubre productos, propuestas y negocios
-                                       locales que forman parte de esta
-                                       experiencia cultural.</p>
-                                </div>
-                            </a>
+                            <div class="noticia_contenido">
+                                <a href="https://www.instagram.com/p/DeM5nYqHMN9/"
+                                   target="_blank">
+                                    <figure class="noticia_imagen">
+                                        <img src="resources/images/noticia-independencia-guayaquil.png"
+                                             alt="Celebración de la Independencia de Guayaquil">
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <label class="flecha_siguiente"
+                                   for="noticia_3_control">&gt;</label>
                         </article>
 
-                        <article class="noticia">
-                            <a href="#">
-                                <figure class="noticia_imagen">
-                                    <img src="Resources/Images/noticia-3.jpg"
-                                         alt="Actividades culturales del Barrio Chino">
-                                </figure>
+                        <article class="noticia noticia_3">
+                            <label class="flecha_anterior"
+                                   for="noticia_2_control">&lt;</label>
 
-                                <div class="noticia_texto">
-                                    <h3>Cultura que transforma la ciudad</h3>
-                                    <p>El Mercado Nocturno reúne gastronomía,
-                                       convivencia y cultura mientras devuelve
-                                       vida al centro de Guayaquil.</p>
-                                </div>
-                            </a>
+                            <div class="noticia_contenido">
+                                <a href="https://www.instagram.com/p/DeNxSv5ugEM/"
+                                   target="_blank">
+                                    <figure class="noticia_imagen">
+                                        <img src="resources/images/noticia-octubre-barrio-chino.png"
+                                             alt="Calendario de octubre del Barrio Chino">
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <label class="flecha_siguiente"
+                                   for="noticia_1_control">&gt;</label>
                         </article>
+
                     </div>
-
-                    <button class="flecha_siguiente" type="button">&gt;</button>
                 </div>
 
-                <div class="indicadores">
-                    <span class="indicador activo"></span>
-                    <span class="indicador"></span>
-                    <span class="indicador"></span>
-                </div>
             </div>
         </section>
 
-        <section id="participa" class="participa">
-            <div class="contenedor">
-                <h2>Opina, reseña o propone</h2>
-                <p>Tu experiencia también forma parte del Mercado Nocturno.
-                   Cuéntanos qué disfrutaste, qué podemos mejorar o qué
-                   te gustaría encontrar en una próxima edición.</p>
+        <section id="comenta" class="comenta">
+            <div class="contenedor comenta_distribucion">
 
-                <form method="get" class="formulario_opinion">
-                    <label for="opinion">Escribe tu mensaje</label>
-                    <textarea id="opinion" name="opinion" rows="6"
-                              placeholder="Queremos conocer tu opinión"></textarea>
-                    <button class="boton" type="submit">Enviar opinión</button>
-                </form>
+                <div class="comenta_formulario">
+                    <h2>Comenta</h2>
+
+                    <form method="get" class="formulario_opinion">
+                        <label for="tipo">¿Qué deseas compartir?</label>
+
+                        <select id="tipo" name="tipo">
+                            <option value="resena">Reseña</option>
+                            <option value="opinion">Opinión</option>
+                            <option value="mejora">Propuesta de mejora</option>
+                        </select>
+
+                        <label for="mensaje">Escribe tu mensaje</label>
+
+                        <textarea id="mensaje" name="mensaje" rows="6"
+                                  placeholder="Te escuchamos"></textarea>
+
+                        <button class="boton" type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="comenta_informacion">
+                    <h2>Queremos saber qué piensas</h2>
+                    <p>Tu experiencia nos ayuda a conocer lo que hace
+                       especial al Mercado Nocturno y cómo podemos
+                       continuar mejorándolo.</p>
+                    <p>Comparte una reseña, danos tu opinión o propón
+                       una idea para las próximas ediciones.</p>
+                </div>
+
             </div>
         </section>
 
         <section id="opiniones" class="opiniones">
             <div class="contenedor">
-                <h2>Lo que dice nuestra comunidad</h2>
-                <p>Cada experiencia nos ayuda a conocer lo que hace especial
-                   al mercado y cómo podemos continuar mejorándolo.</p>
+                <h2>Mira lo que dice nuestra comunidad</h2>
+                <p>Cada experiencia nos permite descubrir lo que hace
+                   especial al Mercado Nocturno.</p>
 
                 <div class="opiniones_lista">
+
                     <article class="opinion">
-                        <p class="opinion_texto">“Disfruto poder aprender sobre
-                           la cultura asiática, su gastronomía y convivir con
-                           la familia en una propuesta diferente.”</p>
+                        <p class="opinion_texto">“Disfruto poder aprender
+                           sobre la cultura asiática, su gastronomía y
+                           convivir con la familia en una propuesta
+                           diferente.”</p>
                         <p class="opinion_autor">Asistente del mercado</p>
                     </article>
 
                     <article class="opinion">
-                        <p class="opinion_texto">“Es de entrada libre y puedes
-                           encontrar muchas cosas. Se comparte la cultura china,
-                           sus productos y emprendimientos.”</p>
+                        <p class="opinion_texto">“Es de entrada libre y
+                           puedes encontrar muchas cosas. Se comparte
+                           la cultura china, sus productos y
+                           emprendimientos.”</p>
                         <p class="opinion_autor">Participante del mercado</p>
                     </article>
 
                     <article class="opinion">
-                        <p class="opinion_texto">“Es maravilloso porque revivió
-                           un lugar que estaba quedando olvidado y ahora pueden
-                           verse nuevos negocios.”</p>
+                        <p class="opinion_texto">“Es maravilloso porque
+                           revivió un lugar que estaba quedando olvidado
+                           y ahora pueden verse nuevos negocios.”</p>
                         <p class="opinion_autor">Representante de la organización</p>
                     </article>
+
                 </div>
             </div>
         </section>
