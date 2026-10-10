@@ -1,0 +1,228 @@
+/* general */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    padding: 60px 0;
+}
+
+main { width: 100%; }
+
+section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0;
+}
+
+h1 { margin: 30px 0 10px; }
+h2 { margin-top: 0; }
+h3 { margin: 0 0 10px; }
+p  { margin-top: 10px; }
+
+figure { margin: 0; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+select,
+textarea,
+button {
+    padding: 12px;
+}
+
+.contenedor,
+.contenedor_footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* banner */
+
+.banner_comunidad {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.banner_comunidad p {
+    max-width: 650px;
+}
+
+.eslogan {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* noticias */
+
+.noticias_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.noticias_informacion {
+    max-width: 500px;
+}
+
+
+/* carrusel */
+
+.carrusel {
+    width: 100%;
+}
+
+.carrusel input {
+    display: none;
+}
+
+.carrusel_contenido {
+    width: 100%;
+}
+
+.noticia {
+    display: none;
+    grid-template-columns: 45px 1fr 45px;
+    gap: 15px;
+    align-items: center;
+}
+
+#noticia_1_control:checked ~ .carrusel_contenido .noticia_1 {
+    display: grid;
+}
+
+#noticia_2_control:checked ~ .carrusel_contenido .noticia_2 {
+    display: grid;
+}
+
+#noticia_3_control:checked ~ .carrusel_contenido .noticia_3 {
+    display: grid;
+}
+
+.noticia_contenido {
+    width: 100%;
+}
+
+.noticia_imagen {
+    width: 100%;
+    height: 520px;
+}
+
+.noticia_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.flecha_anterior,
+.flecha_siguiente {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* comenta */
+
+.comenta_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.comenta_formulario,
+.comenta_informacion {
+    width: 100%;
+}
+
+.comenta_informacion {
+    max-width: 500px;
+}
+
+.formulario_opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario_opinion select,
+.formulario_opinion textarea {
+    width: 100%;
+}
+
+.formulario_opinion textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.formulario_opinion .boton {
+    width: 120px;
+}
+
+
+/* opiniones */
+
+.opiniones > .contenedor > p {
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+.opiniones_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.opinion {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.opinion_texto {
+    margin-top: 0;
+}
+
+.opinion_autor {
+    margin-bottom: 0;
+}
+
+
+/* footer */
+
+.contenedor_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor_footer p {
+    margin: 0;
+}
