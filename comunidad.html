@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunidad del Mercado Nocturno del Barrio Chino de Guayaquil.">
+    <title>Comunidad | Mercado Nocturno del Barrio Chino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="inicio" class="banner_comunidad">
+        <div class="contenedor">
+            <a class="volver" href="index.html">Volver al inicio</a>
+
+            <h1>Comunidad</h1>
+            <p class="eslogan">Te escuchamos</p>
+            <p>Este es un espacio para compartir experiencias, descubrir
+               novedades y construir juntos el futuro del Mercado Nocturno.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="noticias" class="noticias">
+            <div class="contenedor">
+                <h2>Novedades</h2>
+                <p>Descubre lo que está sucediendo en el Mercado Nocturno
+                   y conoce las próximas actividades de nuestra comunidad.</p>
+
+                <div class="carrusel">
+                    <button class="flecha_anterior" type="button">&lt;</button>
+
+                    <div class="carrusel_contenido">
+                        <article class="noticia activa">
+                            <a href="#">
+                                <figure class="noticia_imagen">
+                                    <img src="Resources/Images/noticia-1.jpg"
+                                         alt="Próxima edición del Mercado Nocturno">
+                                </figure>
+
+                                <div class="noticia_texto">
+                                    <h3>Próxima edición del Mercado Nocturno</h3>
+                                    <p>Muy pronto volveremos a encontrarnos con
+                                       nuevos sabores, emprendimientos y
+                                       actividades culturales.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="noticia">
+                            <a href="#">
+                                <figure class="noticia_imagen">
+                                    <img src="Resources/Images/noticia-2.jpg"
+                                         alt="Emprendimientos del Mercado Nocturno">
+                                </figure>
+
+                                <div class="noticia_texto">
+                                    <h3>Conoce nuevos emprendimientos</h3>
+                                    <p>Descubre productos, propuestas y negocios
+                                       locales que forman parte de esta
+                                       experiencia cultural.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="noticia">
+                            <a href="#">
+                                <figure class="noticia_imagen">
+                                    <img src="Resources/Images/noticia-3.jpg"
+                                         alt="Actividades culturales del Barrio Chino">
+                                </figure>
+
+                                <div class="noticia_texto">
+                                    <h3>Cultura que transforma la ciudad</h3>
+                                    <p>El Mercado Nocturno reúne gastronomía,
+                                       convivencia y cultura mientras devuelve
+                                       vida al centro de Guayaquil.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+
+                    <button class="flecha_siguiente" type="button">&gt;</button>
+                </div>
+
+                <div class="indicadores">
+                    <span class="indicador activo"></span>
+                    <span class="indicador"></span>
+                    <span class="indicador"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="participa" class="participa">
+            <div class="contenedor">
+                <h2>Opina, reseña o propone</h2>
+                <p>Tu experiencia también forma parte del Mercado Nocturno.
+                   Cuéntanos qué disfrutaste, qué podemos mejorar o qué
+                   te gustaría encontrar en una próxima edición.</p>
+
+                <form method="get" class="formulario_opinion">
+                    <label for="opinion">Escribe tu mensaje</label>
+                    <textarea id="opinion" name="opinion" rows="6"
+                              placeholder="Queremos conocer tu opinión"></textarea>
+                    <button class="boton" type="submit">Enviar opinión</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="opiniones" class="opiniones">
+            <div class="contenedor">
+                <h2>Lo que dice nuestra comunidad</h2>
+                <p>Cada experiencia nos ayuda a conocer lo que hace especial
+                   al mercado y cómo podemos continuar mejorándolo.</p>
+
+                <div class="opiniones_lista">
+                    <article class="opinion">
+                        <p class="opinion_texto">“Disfruto poder aprender sobre
+                           la cultura asiática, su gastronomía y convivir con
+                           la familia en una propuesta diferente.”</p>
+                        <p class="opinion_autor">Asistente del mercado</p>
+                    </article>
+
+                    <article class="opinion">
+                        <p class="opinion_texto">“Es de entrada libre y puedes
+                           encontrar muchas cosas. Se comparte la cultura china,
+                           sus productos y emprendimientos.”</p>
+                        <p class="opinion_autor">Participante del mercado</p>
+                    </article>
+
+                    <article class="opinion">
+                        <p class="opinion_texto">“Es maravilloso porque revivió
+                           un lugar que estaba quedando olvidado y ahora pueden
+                           verse nuevos negocios.”</p>
+                        <p class="opinion_autor">Representante de la organización</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="contenedor_footer">
+            <p>Mercado Nocturno del Barrio Chino</p>
+            <p>Calle Sucre, entre Chile y Pedro Carbo,
+               centro de Guayaquil.</p>
+            <p>&copy; 2026 Mercado Nocturno del Barrio Chino.
+               Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
