@@ -36,7 +36,6 @@ h2 {
 h3 {
     font-family: "Archivo Black", sans-serif;
     font-size: clamp(1.5rem, 2vw, 2rem);
-    font-style: italic;
 }
 
 p {
