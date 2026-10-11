@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: 'spell_of_asiaregular';
     src: url('../Resources/Fonts/spell_of_asia-webfont.woff2') format('woff2');
@@ -5,22 +8,48 @@
     font-style: normal;
 }
 
+*{box-sizing: border-box;}
+
 body {
-    margin: 0;
-    color: #e1e7ea;
+    margin: 0px;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-main   { max-width: 1000px; margin: auto; padding: 32px; }
 
+/*TIPOGRAFIA DE TEXTOS Y TAMANOS*/
 h1 {
     font-family: 'spell_of_asiaregular', sans-serif;
-    font-size: 10rem;
+    font-size: clamp(2.5rem, 5vw, 5rem);
     color:#ffffff;
     margin: 0;
 }
 
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-style: italic;
+}
+
+p {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/*BACKGROUND EN MOVIMIENTO*/
 .video-fondo {
     position: fixed;
     top: 0;
@@ -38,4 +67,121 @@ h1 {
     background: rgba(0, 0, 0, 0.253);
     z-index: -1;
     pointer-events: none;
+}
+
+
+/*BANNER*/
+.banner {
+    text-align: center;
+    color:#ffffff;
+    padding: 10% 20px;
+}
+
+/*SECCION DE PRESENTACION*/
+.presentacion {
+    background-color: #ffffffde;
+    padding: 40px 20px;
+}
+.seccion-recorrido {
+    max-width: 1100px; 
+    margin: 0px auto;
+}
+
+.contenido-recorrido{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.entrada-img {
+    flex: 1 1 400px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.texto-recorrido{
+    flex: 1 1 450px;
+    text-align: left;
+}
+
+.boton-recorrido{
+    background-color: rgba(2, 27, 69, 0.779);
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0.8% 0.8%;
+    text-decoration: none;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+
+/*SECCION DE OPCIONES*/
+.participacion{
+    background-color: #cf4444b6;
+    padding: 100px 20px;
+}
+
+.seccion-opciones {
+    max-width: 1100px;
+    margin: 0px auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.titulo-seccion{
+    text-align: center;
+}
+
+.opciones{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.opcion{
+    flex: 1;
+    background-color: #deac0ac0;
+    border-radius: 12px;
+    padding: 30px 30px 50px 30px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.231);
+}
+
+.opcion h3 {
+    margin-top: 0px;
+}
+
+.boton-opcion{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #deac0ac0;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 2.5% 3.5%;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.boton-opcion:hover{
+    background-color: #ffffff;
+    color: #dead0a;
+}
+
+
+/*SECCION REDES*/
+.redes{
+    background-color: #ffffffde;
+    padding: 100px 20px;
 }
