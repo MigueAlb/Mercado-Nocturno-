@@ -1,18 +1,14 @@
 /* general */
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f2f2f;
     line-height: 1.6;
-}
-
-header {
-    width: 100%;
-}
-
-main {
-    width: 100%;
 }
 
 section {
@@ -20,17 +16,23 @@ section {
     padding: 80px 0;
 }
 
-footer {
-    width: 100%;
-    padding: 25px 20px;
+h1 {
+    margin: 0 0 15px;
 }
 
-h1 { margin: 0 0 15px; }
-h2 { margin: 0 0 30px; }
-h3 { margin: 20px 0 10px; }
-p { margin-top: 10px; }
+h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+    color: #8f1d2c;
+}
 
-figure { margin: 0; }
+p {
+    margin-top: 10px;
+}
+
+figure {
+    margin: 0;
+}
 
 img {
     display: block;
@@ -77,6 +79,10 @@ img {
 
 /* introduccion */
 
+.introduccion {
+    background-color: #f7f0e5;
+}
+
 .introduccion_distribucion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,88 +104,132 @@ img {
 
 .introduccion_imagen {
     width: 100%;
-    height: 320px;
+    height: 350px;
 }
 
 .introduccion_imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 
 /* aliados */
 
+.aliados {
+    background-color: #8f1d2c;
+}
+
 .aliados_encabezado {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+}
+
+.aliados_encabezado h2 {
+    color: #ffffff;
 }
 
 .aliados_encabezado p {
-    max-width: 650px;
+    max-width: 750px;
     margin: auto;
+    color: #f7f0e5;
 }
 
 .lista_aliados {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px 25px;
+    background-color: #f7f0e5;
+    padding: 35px 20px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .aliado {
-    min-height: 260px;
+    display: inline-block;
+    width: 220px;
+    height: 140px;
+    margin: 15px;
     padding: 15px;
-    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border-radius: 12px;
 }
 
-.aliado_logo {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.aliado_logo img {
+.aliado img {
     width: 100%;
     height: 100%;
-    padding: 10px;
     object-fit: contain;
 }
 
-.aliado p {
-    margin-bottom: 0;
-}
 
-
-/* invitacion */
+/* formulario */
 
 .nuevo_aliado {
+    background-color: #e8dfd2;
+}
+
+.nuevo_aliado_texto {
+    max-width: 750px;
+    margin: 0 auto 45px;
     text-align: center;
 }
 
-.nuevo_aliado_contenido {
-    max-width: 760px;
+.nuevo_aliado_texto p {
+    margin-bottom: 18px;
 }
 
-.nuevo_aliado h2 {
+.formulario_aliado {
+    max-width: 850px;
+    margin: auto;
+}
+
+.formulario_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.campo {
     margin-bottom: 25px;
 }
 
-.nuevo_aliado p {
-    margin-bottom: 20px;
+.campo label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #b9b2a8;
+    border-radius: 8px;
 }
 
 .boton {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 24px;
-    text-decoration: none;
+    display: block;
+    margin: 15px auto 0;
+    padding: 14px 30px;
+    background-color: #233b6e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #8f1d2c;
 }
 
 
 /* footer */
+
+.footer {
+    background-color: #1b2428;
+    padding: 25px 20px;
+}
 
 .contenedor_footer {
     display: flex;
@@ -190,6 +240,8 @@ img {
 
 .contenedor_footer p {
     margin: 0;
+    font-size: 14px;
+    color: #f7f0e5;
 }
 
 .redes_iconos {
@@ -201,11 +253,17 @@ img {
     width: 45px;
     height: 45px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: #111719;
+    border-radius: 50%;
 }
 
 .redes_iconos img {
     width: 28px;
     height: 28px;
+}
+
+.redes_iconos a:hover {
+    background-color: #8f1d2c;
 }
