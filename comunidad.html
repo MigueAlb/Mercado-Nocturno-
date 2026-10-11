@@ -13,10 +13,12 @@
         <div class="contenedor">
             <a class="volver" href="index.html">Volver al inicio</a>
 
-            <h1>Comunidad</h1>
-            <p class="eslogan">Te escuchamos</p>
-            <p>Este es un espacio para compartir experiencias, descubrir
-               novedades y construir juntos el futuro del Mercado Nocturno.</p>
+            <div class="banner_contenido">
+                <h1>Comunidad</h1>
+                <p class="eslogan">Te escuchamos</p>
+                <p>Este es un espacio para compartir experiencias, descubrir
+                   novedades y construir juntos el futuro del Mercado Nocturno.</p>
+            </div>
         </div>
     </header>
 
@@ -35,10 +37,8 @@
                 <div class="carrusel">
                     <input type="radio" name="carrusel"
                            id="noticia_1_control" checked>
-
                     <input type="radio" name="carrusel"
                            id="noticia_2_control">
-
                     <input type="radio" name="carrusel"
                            id="noticia_3_control">
 
@@ -50,7 +50,7 @@
 
                             <div class="noticia_contenido">
                                 <a href="https://www.instagram.com/p/Dd_o9UjOybd/"
-                                   target="_blank">
+                                   target="_blank" rel="noopener noreferrer">
                                     <figure class="noticia_imagen">
                                         <img src="resources/images/noticia-dia-nacional-china.png"
                                              alt="Celebración del Día Nacional de China">
@@ -68,7 +68,7 @@
 
                             <div class="noticia_contenido">
                                 <a href="https://www.instagram.com/p/DeM5nYqHMN9/"
-                                   target="_blank">
+                                   target="_blank" rel="noopener noreferrer">
                                     <figure class="noticia_imagen">
                                         <img src="resources/images/noticia-independencia-guayaquil.png"
                                              alt="Celebración de la Independencia de Guayaquil">
@@ -86,7 +86,7 @@
 
                             <div class="noticia_contenido">
                                 <a href="https://www.instagram.com/p/DeNxSv5ugEM/"
-                                   target="_blank">
+                                   target="_blank" rel="noopener noreferrer">
                                     <figure class="noticia_imagen">
                                         <img src="resources/images/noticia-octubre-barrio-chino.png"
                                              alt="Calendario de octubre del Barrio Chino">
@@ -113,7 +113,7 @@
                     <form method="get" class="formulario_opinion">
                         <label for="tipo">¿Qué deseas compartir?</label>
 
-                        <select id="tipo" name="tipo">
+                        <select id="tipo" name="tipo" required>
                             <option value="resena">Reseña</option>
                             <option value="opinion">Opinión</option>
                             <option value="mejora">Propuesta de mejora</option>
@@ -122,7 +122,7 @@
                         <label for="mensaje">Escribe tu mensaje</label>
 
                         <textarea id="mensaje" name="mensaje" rows="6"
-                                  placeholder="Te escuchamos"></textarea>
+                                  placeholder="Te escuchamos" required></textarea>
 
                         <button class="boton" type="submit">Enviar</button>
                     </form>
@@ -178,11 +178,24 @@
 
     <footer id="footer" class="footer">
         <div class="contenedor_footer">
-            <p>Mercado Nocturno del Barrio Chino</p>
-            <p>Calle Sucre, entre Chile y Pedro Carbo,
-               centro de Guayaquil.</p>
+
             <p>&copy; 2026 Mercado Nocturno del Barrio Chino.
                Todos los derechos reservados.</p>
+
+            <div class="redes_iconos">
+                <a href="https://www.facebook.com/p/Comit%C3%A9-Barrio-Chino-Guayaquil-6156831669615/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="#"
+                         alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/comitebarriochino.gyq/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="#"
+                         alt="Instagram">
+                </a>
+            </div>
+
         </div>
     </footer>
 </body>
