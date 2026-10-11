@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'spell_of_asiaregular';
+    src: url('../resources/fonts/spell_of_asia-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* general */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: #171316;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'spell_of_asiaregular', sans-serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-style: italic;
+}
+
+p {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* background en movimiento */
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.capa-oscura {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.banner,
+main,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* banner */
+
+.banner {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner_contenido {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.banner_contenido h1 {
+    margin-bottom: 30px;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.banner_contenido p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(1.1rem, 2vw, 1.55rem);
+    font-weight: 500;
+    color: #f8f3ea;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* seccion de presentacion */
+
+.presentacion {
+    background-color: rgba(247, 240, 229, 0.88);
+    padding: 90px 20px;
+}
+
+.seccion-recorrido {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contenido-recorrido {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.entrada-img {
+    flex: 1 1 400px;
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.texto-recorrido {
+    flex: 1 1 450px;
+    text-align: left;
+}
+
+.texto-recorrido h2 {
+    color: #8f1d2c;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.texto-recorrido p {
+    color: #2f2f2f;
+    margin-bottom: 18px;
+}
+
+.texto-recorrido .eslogan {
+    color: #8f1d2c;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.boton-recorrido {
+    display: inline-block;
+    background-color: #233b6e;
+    color: #ffffff;
+    padding: 14px 26px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(35, 59, 110, 0.28);
+}
+
+.boton-recorrido:hover {
+    background-color: #8f1d2c;
+}
+
+
+/* seccion de opciones */
+
+.participacion {
+    background-color: rgba(143, 29, 44, 0.94);
+    padding: 100px 20px;
+}
+
+.seccion-opciones {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.titulo_seccion {
+    text-align: center;
+}
+
+.titulo_seccion h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.titulo_seccion p {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    font-size: 1.15rem;
+    color: #f7ede2;
+}
+
+.opciones {
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.opcion {
+    flex: 1;
+    background-color: #f7f0e5;
+    border-top: 9px solid #d39a18;
+    border-radius: 22px;
+    padding: 35px 30px 90px 30px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.opcion h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #8f1d2c;
+    font-size: 1.8rem;
+}
+
+.opcion p {
+    color: #444444;
+    line-height: 1.8;
+}
+
+.boton-opcion {
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+    background-color: #233b6e;
+    padding: 12px 22px;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 25px;
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(35, 59, 110, 0.20);
+}
+
+.boton-opcion:hover {
+    background-color: #8f1d2c;
+    color: #ffffff;
+}
+
+
+/* ubicacion */
+
+.ubicacion {
+    background-color: rgba(232, 223, 210, 0.90);
+    padding: 90px 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ubicacion_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ubicacion_texto {
+    max-width: 550px;
+}
+
+.ubicacion_texto h2 {
+    color: #8f1d2c;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ubicacion_texto p {
+    margin-bottom: 18px;
+    color: #2f2f2f;
+}
+
+.boton-ubicacion {
+    display: inline-block;
+    background-color: #233b6e;
+    color: #ffffff;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.boton-ubicacion:hover {
+    background-color: #8f1d2c;
+}
+
+.ubicacion_mapa {
+    width: 100%;
+    height: 380px;
+}
+
+.ubicacion_mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #1b2428;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+.contenedor_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenedor_footer p {
+    color: #f7f0e5;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.redes_iconos {
+    display: flex;
+    gap: 15px;
+}
+
+.redes_iconos a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111719;
+    border-radius: 50%;
+}
+
+.redes_iconos img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.redes_iconos a:hover {
+    background-color: #8f1d2c;
+}

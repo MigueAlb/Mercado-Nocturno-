@@ -1,4 +1,3 @@
-
 /* general */
 
 * { box-sizing: border-box; }
@@ -10,10 +9,11 @@ body {
 
 header {
     width: 100%;
-    padding: 60px 0;
 }
 
-main { width: 100%; }
+main {
+    width: 100%;
+}
 
 section {
     width: 100%;
@@ -22,13 +22,13 @@ section {
 
 footer {
     width: 100%;
-    padding: 50px 0;
+    padding: 25px 20px;
 }
 
-h1 { margin: 30px 0 10px; }
-h2 { margin-top: 0; }
+h1 { margin: 0 0 15px; }
+h2 { margin: 0 0 30px; }
 h3 { margin: 20px 0 10px; }
-p  { margin-top: 10px; }
+p { margin-top: 10px; }
 
 figure { margin: 0; }
 
@@ -49,9 +49,10 @@ img {
 /* banner */
 
 .banner_aliados {
-    min-height: 350px;
+    min-height: 550px;
     display: flex;
     align-items: center;
+    padding: 40px 0;
 }
 
 .volver {
@@ -64,13 +65,13 @@ img {
 }
 
 .banner_contenido h1 {
-    margin: 0 0 10px;
-    font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 48px;
 }
 
 .eslogan {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
@@ -121,7 +122,7 @@ img {
 
 .lista_aliados {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px 25px;
 }
 
@@ -182,10 +183,29 @@ img {
 
 .contenedor_footer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 .contenedor_footer p {
     margin: 0;
+}
+
+.redes_iconos {
+    display: flex;
+    gap: 15px;
+}
+
+.redes_iconos a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes_iconos img {
+    width: 28px;
+    height: 28px;
 }
