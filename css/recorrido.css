@@ -1,0 +1,213 @@
+
+/* general */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    padding: 60px 0;
+}
+
+main { width: 100%; }
+
+section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0;
+}
+
+h1 { margin: 30px 0 10px; }
+h2 { margin-top: 0; }
+h3 { margin: 0 0 10px; }
+p  { margin-top: 10px; }
+
+figure { margin: 0; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor,
+.contenedor_footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* banner */
+
+.banner_recorrido {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.banner_contenido {
+    text-align: center;
+}
+
+.banner_contenido h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+.eslogan {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* historia */
+
+.historia h2 {
+    margin-bottom: 50px;
+}
+
+.historia_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.historia_distribucion:last-child {
+    margin-bottom: 0;
+}
+
+.historia_texto {
+    max-width: 550px;
+}
+
+.historia_texto h3 {
+    margin-bottom: 20px;
+}
+
+.historia_texto p {
+    margin-bottom: 18px;
+}
+
+.historia_imagen {
+    width: 100%;
+    height: 350px;
+}
+
+.historia_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* experiencias */
+
+.experiencias > .contenedor > p {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.experiencias_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.experiencia {
+    padding: 20px;
+    text-align: center;
+}
+
+.experiencia_imagen {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.experiencia_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experiencia h3 {
+    margin-bottom: 12px;
+}
+
+.experiencia p {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+/* postales */
+
+.postales h2 {
+    margin-bottom: 45px;
+}
+
+.postales_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.postales_texto {
+    max-width: 550px;
+}
+
+.postales_texto h3 {
+    margin-bottom: 20px;
+}
+
+.postales_texto p {
+    margin-bottom: 18px;
+}
+
+.postales_imagen {
+    width: 100%;
+    height: 350px;
+}
+
+.postales_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+.contenedor_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor_footer p {
+    margin: 0;
+}
