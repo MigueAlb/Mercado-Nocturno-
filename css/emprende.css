@@ -1,18 +1,14 @@
 /* general */
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f2f2f;
     line-height: 1.6;
-}
-
-header {
-    width: 100%;
-}
-
-main {
-    width: 100%;
 }
 
 section {
@@ -20,20 +16,35 @@ section {
     padding: 80px 0;
 }
 
-footer {
-    width: 100%;
-    padding: 25px 20px;
+h1 {
+    margin: 0 0 15px;
 }
 
-h1 { margin: 0 0 15px; }
-h2 { margin: 0 0 30px; }
-h3 { margin: 0 0 10px; }
-p { margin-top: 10px; }
+h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+    color: #8f1d2c;
+}
 
-ul { padding-left: 24px; }
-li { margin-bottom: 12px; }
+h3 {
+    margin: 0 0 15px;
+}
 
-figure { margin: 0; }
+p {
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+figure {
+    margin: 0;
+}
 
 img {
     display: block;
@@ -86,9 +97,18 @@ img {
 
 /* pasos */
 
-.participar > .contenedor > p {
-    max-width: 650px;
-    margin-bottom: 40px;
+.participar {
+    background-color: #f7f0e5;
+}
+
+.participar h2 {
+    text-align: center;
+}
+
+.participar_descripcion {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
 }
 
 .pasos_lista {
@@ -98,17 +118,39 @@ img {
 }
 
 .paso {
-    min-height: 280px;
+    background-color: #ffffff;
+    border-top: 9px solid #d39a18;
+    border-radius: 15px;
     padding: 30px;
 }
 
 .paso_numero {
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #8f1d2c;
+    margin: 0 0 20px;
+}
+
+.paso h3 {
+    font-size: 22px;
+    color: #8f1d2c;
+}
+
+.paso p {
+    line-height: 1.8;
 }
 
 
 /* beneficios */
+
+.beneficios {
+    background-color: #8f1d2c;
+    color: #ffffff;
+}
+
+.beneficios h2 {
+    color: #ffffff;
+}
 
 .beneficios_distribucion {
     display: grid;
@@ -121,6 +163,10 @@ img {
     max-width: 550px;
 }
 
+.beneficios_informacion p {
+    margin-bottom: 25px;
+}
+
 .beneficios_imagen {
     width: 100%;
     height: 450px;
@@ -129,37 +175,83 @@ img {
 .beneficios_imagen img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 
 /* contacto */
 
 .contacto {
+    background-color: #e8dfd2;
+}
+
+.contacto_texto {
+    max-width: 750px;
+    margin: 0 auto 45px;
     text-align: center;
 }
 
-.contacto .contenedor {
-    max-width: 750px;
+.contacto_texto p {
+    margin-bottom: 18px;
 }
 
-.contacto p {
-    margin-bottom: 20px;
+
+/* formulario */
+
+.formulario_emprende {
+    max-width: 850px;
+    margin: auto;
 }
 
-.contacto .boton {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    text-decoration: none;
+.formulario_distribucion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
-.correo {
-    margin-top: 20px;
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #b9b2a8;
+    border-radius: 8px;
+}
+
+.boton {
+    display: block;
+    margin: 15px auto 0;
+    padding: 14px 30px;
+    background-color: #233b6e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #8f1d2c;
 }
 
 
 /* footer */
+
+.footer {
+    background-color: #1b2428;
+    padding: 25px 20px;
+}
 
 .contenedor_footer {
     display: flex;
@@ -170,6 +262,8 @@ img {
 
 .contenedor_footer p {
     margin: 0;
+    font-size: 14px;
+    color: #f7f0e5;
 }
 
 .redes_iconos {
@@ -183,9 +277,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #111719;
+    border-radius: 50%;
 }
 
 .redes_iconos img {
     width: 28px;
     height: 28px;
+}
+
+.redes_iconos a:hover {
+    background-color: #8f1d2c;
 }

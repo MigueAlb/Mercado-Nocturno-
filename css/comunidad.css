@@ -1,18 +1,14 @@
 /* general */
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f2f2f;
     line-height: 1.6;
-}
-
-header {
-    width: 100%;
-}
-
-main {
-    width: 100%;
 }
 
 section {
@@ -20,33 +16,32 @@ section {
     padding: 80px 0;
 }
 
-footer {
-    width: 100%;
-    padding: 25px 20px;
+h1 {
+    margin: 0 0 15px;
 }
 
-h1 { margin: 0 0 15px; }
-h2 { margin: 0 0 30px; }
-h3 { margin: 0 0 10px; }
-p { margin-top: 10px; }
+h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+    color: #8f1d2c;
+}
 
-figure { margin: 0; }
+h3 {
+    margin: 0 0 15px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+figure {
+    margin: 0;
+}
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-button,
-label {
-    cursor: pointer;
-}
-
-select,
-textarea,
-button {
-    padding: 12px;
 }
 
 .contenedor,
@@ -94,6 +89,10 @@ button {
 
 /* noticias */
 
+.noticias {
+    background-color: #f7f0e5;
+}
+
 .noticias_distribucion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,6 +104,10 @@ button {
     max-width: 500px;
 }
 
+.noticias_informacion p {
+    margin-bottom: 18px;
+}
+
 
 /* carrusel */
 
@@ -113,8 +116,7 @@ button {
 }
 
 .carrusel input {
-    position: absolute;
-    opacity: 0;
+    display: none;
 }
 
 .carrusel_contenido {
@@ -124,7 +126,7 @@ button {
 .noticia {
     display: none;
     grid-template-columns: 45px 1fr 45px;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -146,7 +148,7 @@ button {
 
 .noticia_imagen {
     width: 100%;
-    height: 520px;
+    height: 480px;
 }
 
 .noticia_imagen img {
@@ -162,10 +164,29 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #233b6e;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.flecha_anterior:hover,
+.flecha_siguiente:hover {
+    background-color: #8f1d2c;
 }
 
 
 /* comenta */
+
+.comenta {
+    background-color: #8f1d2c;
+    color: #ffffff;
+}
+
+.comenta h2 {
+    color: #ffffff;
+}
 
 .comenta_distribucion {
     display: grid;
@@ -189,25 +210,49 @@ button {
     gap: 15px;
 }
 
+.formulario_opinion label {
+    font-weight: bold;
+}
+
 .formulario_opinion select,
 .formulario_opinion textarea {
     width: 100%;
-}
-
-.formulario_opinion textarea {
-    min-height: 180px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #b9b2a8;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 .formulario_opinion .boton {
     width: 120px;
+    padding: 12px;
+    background-color: #233b6e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.formulario_opinion .boton:hover {
+    background-color: #d39a18;
 }
 
 
 /* opiniones */
 
-.opiniones > .contenedor > p {
+.opiniones {
+    background-color: #e8dfd2;
+}
+
+.opiniones h2 {
+    text-align: center;
+}
+
+.opiniones_descripcion {
     max-width: 650px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    text-align: center;
 }
 
 .opiniones_lista {
@@ -217,11 +262,14 @@ button {
 }
 
 .opinion {
+    background-color: #ffffff;
+    border-top: 9px solid #d39a18;
+    border-radius: 15px;
     min-height: 230px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
 }
 
 .opinion_texto {
@@ -229,11 +277,18 @@ button {
 }
 
 .opinion_autor {
+    color: #8f1d2c;
+    font-weight: bold;
     margin-bottom: 0;
 }
 
 
 /* footer */
+
+.footer {
+    background-color: #1b2428;
+    padding: 25px 20px;
+}
 
 .contenedor_footer {
     display: flex;
@@ -244,6 +299,8 @@ button {
 
 .contenedor_footer p {
     margin: 0;
+    font-size: 14px;
+    color: #f7f0e5;
 }
 
 .redes_iconos {
@@ -257,9 +314,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #111719;
+    border-radius: 50%;
 }
 
 .redes_iconos img {
     width: 28px;
     height: 28px;
+}
+
+.redes_iconos a:hover {
+    background-color: #8f1d2c;
 }
