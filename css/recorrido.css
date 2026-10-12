@@ -5,6 +5,12 @@
 body {
     margin: 0;
     line-height: 1.6;
+
+    background-image: url("../resources/images/Fondo paginas.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
