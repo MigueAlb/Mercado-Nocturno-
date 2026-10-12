@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'spell_of_asiaregular';
+    src: url('../resources/fonts/spell_of_asia-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* general */
 
 * { box-sizing: border-box; }
@@ -31,10 +42,17 @@ footer {
     padding: 25px 20px;
 }
 
-h1 { margin: 0 0 15px; }
-h2 { margin: 0 0 40px; }
-h3 { margin: 0 0 15px; }
-p { margin-top: 10px; }
+h1 { margin: 0 0 15px; font-family: "spell_of_asiaregular", sans-serif;}
+h2 { margin: 0 0 40px; font-family: "Archivo Black", sans-serif;}
+
+h3 {
+    margin: 0 0 15px;
+    font-family: "Archivo Balck",sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+p { margin-top: 10px; font-family: "Jost", sans-serif; font-size: 1rem;}
 
 figure { margin: 0; }
 
@@ -51,6 +69,14 @@ img {
     margin: auto;
 }
 
+.capa-oscura {
+    position: fixed;
+    inset: 0;
+    background: rgba(109, 176, 226, 0.253);
+    z-index: -1;
+    pointer-events: none;
+}
+
 
 /* banner */
 
@@ -59,6 +85,7 @@ img {
     display: flex;
     align-items: center;
     padding: 40px 0;
+    background-color: #111719;
 }
 
 .banner_contenido {
@@ -68,6 +95,7 @@ img {
 .banner_contenido h1 {
     margin-bottom: 20px;
     font-size: 48px;
+    color: #ffffff;
 }
 
 .eslogan {
