@@ -81,7 +81,7 @@ img {
 /* banner */
 
 .banner_recorrido {
-    min-height: 550px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     padding: 40px 0;
@@ -101,6 +101,7 @@ img {
 .eslogan {
     margin: 0;
     font-size: 22px;
+    color: #ffffff;
 }
 
 /*BANNER-DISEÑO BOTÓN INTERACTIVO*/
