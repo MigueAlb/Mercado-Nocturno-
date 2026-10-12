@@ -11,7 +11,9 @@
 <body>
     <header id="inicio" class="banner_emprende">
         <div class="contenedor">
-            <a class="volver" href="index.html">Volver al inicio</a>
+            <a class="btn_volver" href="index.html">
+                <span class="texto">Volver al inicio</span>
+            </a>
 
             <div class="banner_contenido">
                 <h1>Emprende con nosotros</h1>
@@ -25,16 +27,14 @@
     <main>
         <section id="participar" class="participar">
             <div class="contenedor">
-
                 <h2>¿Cómo participar?</h2>
-                <p class="participar_descripcion">Queremos conocer tu propuesta
-                   y ayudarte a formar parte de una próxima edición
-                   del Mercado Nocturno.</p>
+                <p>Queremos conocer tu propuesta y ayudarte a formar parte
+                   de una próxima edición del Mercado Nocturno.</p>
 
                 <div class="pasos_lista">
 
                     <article class="paso">
-                        <p class="paso_numero">01</p>
+                        <p class="paso_numero">1</p>
                         <h3>Prepara tu propuesta</h3>
                         <p>Reúne el nombre de tu emprendimiento, una descripción
                            de tus productos, fotografías y enlaces a tus
@@ -42,14 +42,15 @@
                     </article>
 
                     <article class="paso">
-                        <p class="paso_numero">02</p>
-                        <h3>Envíanos tus datos</h3>
-                        <p>Completa el formulario de inscripción y cuéntanos
-                           por qué te gustaría participar en el Mercado Nocturno.</p>
+                        <p class="paso_numero">2</p>
+                        <h3>Escríbenos</h3>
+                        <p>Envíanos la información de tu emprendimiento
+                           y cuéntanos por qué te gustaría participar
+                           en el Mercado Nocturno.</p>
                     </article>
 
                     <article class="paso">
-                        <p class="paso_numero">03</p>
+                        <p class="paso_numero">3</p>
                         <h3>Espera la confirmación</h3>
                         <p>La organización revisará tu propuesta y se
                            comunicará contigo para indicarte la disponibilidad,
@@ -80,7 +81,7 @@
 
                 <figure class="beneficios_imagen">
                     <img src="resources/images/WhatsApp Image 2026-10-03 at 19.43.52.jpeg"
-                         alt="Emprendimientos del Mercado Nocturno">
+                         alt="Emprendimientos participantes del Mercado Nocturno">
                 </figure>
 
             </div>
@@ -88,63 +89,20 @@
 
         <section id="contacto" class="contacto">
             <div class="contenedor">
+                <h2>¿Listo para dar el siguiente paso?</h2>
+                <p>Queremos descubrir tu propuesta y conocer aquello
+                   que hace diferente a tu emprendimiento.</p>
+                <p>Escríbenos y empieza el proceso para formar parte
+                   de una próxima edición del Mercado Nocturno.</p>
 
-                <div class="contacto_texto">
-                    <h2>¿Listo para dar el siguiente paso?</h2>
-                    <p>Queremos descubrir tu propuesta y conocer aquello
-                       que hace diferente a tu emprendimiento.</p>
-                    <p>Completa el formulario para postularte como emprendedor
-                       en una próxima edición del Mercado Nocturno.</p>
-                </div>
+                <a class="boton"
+                   href="mailto:emprende@mercadobarriochino">
+                    Quiero participar
+                </a>
 
-                <form class="formulario_emprende" method="post">
-
-                    <div class="formulario_distribucion">
-
-                        <div class="campo">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre"
-                                   placeholder="Tu nombre" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="emprendimiento">Nombre del emprendimiento</label>
-                            <input type="text" id="emprendimiento"
-                                   name="emprendimiento"
-                                   placeholder="Nombre de tu negocio" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="correo">Correo electrónico</label>
-                            <input type="email" id="correo" name="correo"
-                                   placeholder="correo@ejemplo.com" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="telefono">Teléfono de contacto</label>
-                            <input type="tel" id="telefono" name="telefono"
-                                   placeholder="Tu número de contacto" required>
-                        </div>
-
-                    </div>
-
-                    <div class="campo">
-                        <label for="productos">¿Qué productos o servicios ofreces?</label>
-                        <textarea id="productos" name="productos" rows="5"
-                                  placeholder="Describe tu emprendimiento"
-                                  required></textarea>
-                    </div>
-
-                    <div class="campo">
-                        <label for="redes">Redes sociales de tu emprendimiento</label>
-                        <input type="text" id="redes" name="redes"
-                               placeholder="Instagram o Facebook">
-                    </div>
-
-                    <button class="boton" type="submit">Enviar propuesta</button>
-
-                </form>
-
+                <p class="correo">
+                    emprende@mercadobarriochino
+                </p>
             </div>
         </section>
     </main>
@@ -158,12 +116,14 @@
             <div class="redes_iconos">
                 <a href="https://www.facebook.com/p/Comit%C3%A9-Barrio-Chino-Guayaquil-6156831669615/"
                    target="_blank" rel="noopener noreferrer">
-                    <img src="#" alt="Facebook">
+                    <img src="resources/images/redes_sociales/IconoFb.png"
+                         alt="Facebook">
                 </a>
 
                 <a href="https://www.instagram.com/comitebarriochino.gyq/"
                    target="_blank" rel="noopener noreferrer">
-                    <img src="#" alt="Instagram">
+                    <img src="resources/images/redes_sociales/IconoIg.png"
+                         alt="Instagram">
                 </a>
             </div>
 

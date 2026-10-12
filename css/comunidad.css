@@ -61,11 +61,6 @@ img {
     padding: 40px 0;
 }
 
-.volver {
-    display: inline-block;
-    margin-bottom: 40px;
-}
-
 .banner_contenido {
     text-align: center;
 }
@@ -84,6 +79,49 @@ img {
 .eslogan {
     font-size: 22px;
     margin-bottom: 20px;
+}
+
+/*BANNER-DISEÑO BOTÓN INTERACTIVO*/
+.btn_volver {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #ffffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #233b6e;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn_volver::after {
+    content: "←";
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: translateX(15px);
+    transition: all 0.3s ease;
+}
+
+.btn_volver .texto{
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn_volver:hover::after {
+  opacity: 1;
+  transform: translateX(8px);
+}
+
+.btn_volver:hover .texto {
+    transform: translateX(8px);
+}
+
+.btn_volver:hover {
+    background-color: #8f1d2c;
 }
 
 
@@ -287,10 +325,13 @@ img {
 
 .footer {
     background-color: #1b2428;
+    color: #ffffff;
     padding: 25px 20px;
 }
 
 .contenedor_footer {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,9 +339,9 @@ img {
 }
 
 .contenedor_footer p {
-    margin: 0;
-    font-size: 14px;
     color: #f7f0e5;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .redes_iconos {
@@ -321,6 +362,7 @@ img {
 .redes_iconos img {
     width: 28px;
     height: 28px;
+    object-fit: contain;
 }
 
 .redes_iconos a:hover {
